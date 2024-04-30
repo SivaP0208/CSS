@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div ul{
+    background-color: whitesmoke;
+    position: fixed;
+    height: 100%;
+    width: 12%;
+}
+.content{
+    display: block;
+    padding: 15% 10%;
+    background-color: gray;
+}
+div ul li a:not(.content){
+    display: block;
+    text-align: left;
+    padding: 10%;
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+li a:hover:not(.content){
+    background-color: green;
+    color: white;
+}
+li ul{
+    display: none;
+}
+.suboption:hover{
+    display: block;
+    padding: 15% 10%;
+    background-color: black;
+    color: whitesmoke;
+}

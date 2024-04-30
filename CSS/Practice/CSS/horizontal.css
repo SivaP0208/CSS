@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.option{
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    padding: .8rem 6rem ;
+}
+li a:not(.logo){
+    color: whitesmoke;
+    text-decoration: none;
+    float: right;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.option div li{
+    display: inline-block;
+    padding: 0 2%;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid gray;
+}
+.option div{
+    float: right;
+    width: 70vw;
+    position: relative;
+    right: 9%;
+}
+.logo{
+    float: left;
+    vertical-align: middle;
+}
+
+
+

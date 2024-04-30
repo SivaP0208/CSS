@@ -1,0 +1,161 @@
+body{
+    margin: 0px;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    background-color: antiquewhite;
+    width: calc(100vw - 40px);
+    height: calc(100vh - 40px);
+}
+p{
+    margin: 0px;
+    padding: 0px;
+}
+.page{
+    margin: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    place-content: center;
+    padding: 20px;
+    background-image: linear-gradient(90deg, #e4e9f4 0%, #5B7596 50%);
+}
+.containers{
+    display: flex;
+    width:43%;
+    height: 55%;
+    margin: 0px auto;
+}
+.container1{
+    width: 50%;
+    height: calc(100% - 40px);
+    background-color: white;
+    flex-shrink: 0;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.container2{
+    width: 50%;
+    position: relative;
+    background-color: #17355e;
+    flex-shrink: 0;
+}
+.c1header {
+    font-size: 1.55rem;
+    color: #2b347b;
+    margin: 2.5rem 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.c1header p:first-child{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.c1header p:last-child{
+    margin-bottom: 1rem;
+}
+.message{
+    margin: 10px;
+    padding: 10px;
+    color: #999;
+    font-size: 14px;
+      
+}
+.quote{
+    margin: 10px;
+    font-size: 13px;
+    color: #767569;
+    font-style: italic;
+}
+.author{
+    font-size: 13px;
+    color: #767569;
+    margin: 10px;
+}
+.login{
+    margin: 2rem 2.5rem;
+    position: absolute;
+}
+.form{
+    margin-bottom: 1rem;
+}
+input{
+    width: 100%;
+    height: 4.5vh;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid gray;
+    border-radius: 3px;
+    padding: 0px 10px;
+    margin-top: .2rem;
+}
+label{
+    color: #bababa;
+    font-size: 14px;
+}
+.signin{
+    width: 112%;
+    height: 4.5vh;
+    background-color:transparent;
+    border: 2px solid gray;
+    border-radius: 2px;
+    padding: 0px auto;
+    color:#bababa ;
+    font-size: 14px;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: #bababa ;
+    font-size: 14px;
+    font-weight: 500;
+}
+.microsoft{
+    width: 112%;
+    height: 5vh;
+    background-color:transparent;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 0px auto;
+    color: #fff; ;
+    font-size: 14px;
+    font-weight: 500;
+}
+.microsoft img{
+    width: 3vw;
+    height: 3vh;
+    vertical-align: middle;
+}
+.signin:hover{
+    background-color: rgba(234, 230, 230, 0.286);
+}
+a:hover{
+    color: rgb(48, 48, 232);
+}
+input:focus{
+    outline: 4px solid #144485;
+}
+@media (max-width: 700px) {
+    .containers {
+        flex-direction: column;
+        height: 630px;
+        width: 320px;
+    }
+    .container1 {
+        height: 100%;
+        margin: 0 auto;
+        width: calc(100% - 40px);
+        max-height: 270px;
+    }
+    .container2 {
+        flex-shrink: 0;
+        height: 50%;
+        width: 100%;
+        margin: 0 auto;
+        max-height: 350px;
+        z-index: 2;
+    }
+}
+

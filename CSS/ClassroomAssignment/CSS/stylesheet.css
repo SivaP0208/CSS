@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.topbar{
+    width: 100%;
+    height: 10%;
+    background-color: whitesmoke;
+    position: fixed;
+}
+.topbar ul li{
+    display: inline-block;
+}
+.logo a img{
+    width: 100%;
+    height: 5%;
+}
+.logo{
+    vertical-align: middle;
+    width: 10%;
+    padding: 1em 0em 1em 10em;
+}
+.option a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 86);
+    padding: 0% 10%;
+} 
+.options{
+    display: inline-block;
+    margin: 0em 5em 0em 6em ;
+}
+.option{
+    padding: 1em 2em;
+    place-content: center;
+}
+.option a{
+    font-size: large;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 0em;
+}
+.option:hover{
+    border-radius: 10px;
+    background-color: rgba(98, 165, 165, 0.232);
+}
+.free{
+   margin: 0em .5em 0em .0em;
+}
+.demo a{
+    padding: .5em .5em;
+    text-decoration: none;
+    width: fit-content;
+    border: 2px solid orangered;
+    color: orangered;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.trial a{
+    padding: .5em .5em;
+    text-decoration: none;
+    width: fit-content;
+    border: 2px solid orangered;
+    color: white;
+    background-color: orangered;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul[class^=sub] {
+    display: none;
+}
+.product:hover{
+    .subproduct{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        border: 1px solid rgba(128, 128, 128, 0.463);
+        border-radius: 10px;
+        padding: .5em 2em .5em .5em;
+        top:110%;
+        left: 27%;
+        box-shadow:3px 5px 5px gray;
+    }
+}
+.subproduct li:first-child{
+    margin-bottom: 1em;
+}
+.solutions:hover{
+    .subsolutions{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        border: 1px solid rgba(128, 128, 128, 0.463);
+        border-radius: 10px;
+        padding: .5em 2em .5em .5em;
+        top:110%;
+        left: 36%;
+        box-shadow:3px 5px 5px gray;
+    }
+}
+.subsolutions li:not(:last-child){
+    margin-bottom: 1em;
+}
+.resources:hover{
+    .subresources{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color:white;
+        border: 1px solid rgba(128, 128, 128, 0.463);
+        border-radius: 10px;
+        padding: .5em 1em .5em .5em;
+        top:110%;
+        left: 44%;
+        box-shadow:3px 5px 5px gray;
+    }
+}
+.subresources li:not(:last-child){
+    margin-bottom: 1em;
+}
+.company:hover{
+    .subcompany{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        border: 1px solid rgba(128, 128, 128, 0.463);
+        border-radius: 10px;
+        padding: .5em 2em .5em .5em;
+        top:110%;
+        left: 54%;
+        box-shadow:3px 5px 5px gray;
+    }
+}
+.subcompany li:not(:last-child){
+    margin-bottom: 1em;
+}
+.message{
+    position: absolute;
+    top:10%;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    place-content: center;
+    z-index: -1;
+}
+.message1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgba(26, 26, 85, 0.967);
+    padding-bottom: 1em;
+}
+.message2{
+    width: 100%;
+    font-size: 22px;
+    font-weight: bolder;
+    color: rgba(26, 26, 85, 0.967) ;
+    text-align: center;
+    place-content: center;
+    position: relative;
+    line-height: 1.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contacts{
+    display: flex;
+    padding: 8em 13em;
+    width: 73%;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(98, 165, 165, 0.232);
+    z-index: -1;
+}
+.contact{
+    width: 50%;
+    margin-bottom: 2em;
+}
+.sales *{
+    display: block;
+}
+.contacts .left{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5em;
+}
+a{
+    text-decoration: none;
+}
+.sales{
+    padding: 1em 1em 2em;
+    border: 1px solid rgba(128, 128, 128, 0.633);
+    border-radius: 30px;
+    background-color: white;
+    width: 80%;
+    margin-right: 2em;
+    font-size: 18px;
+}
